@@ -8,6 +8,7 @@ Your tasks:
 2. Compare the team's average scores to determine the winner of the competition,
 and print it to the console. Don't forget that there can be a draw, so test for that
 as well (draw means they have the same average score)
+
 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
 team only wins if it has a higher score than the other team, and the same time a
 score of at least 100 points. Hint: Use a logical operator to test for minimum
@@ -23,15 +24,43 @@ Test data:
 GOOD LUCK �
 */
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
+// Regular Coding Challenge
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
 
 console.log(scoreDolphins, scoreKoalas);
 
+console.log("Regular Coding Challenge");
 if (scoreDolphins > scoreKoalas) {
-  console.log(`Dolphins win the thropy.`);
+  console.log(`Dolphins wins the thropy.`);
 } else if (scoreKoalas > scoreDolphins) {
-  console.log(`Koalas win the thropy.`);
+  console.log(`Koalas wins the thropy.`);
 } else if (scoreKoalas === scoreDolphins) {
-  console.log(`Both win the thropy.`);
+  console.log(`Both wins the thropy.`);
+}
+
+// Coding Challenge Bonus 1
+console.log("Coding Challenge Bonus 1");
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log(`Dolphins wins the thropy.`);
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log(`Koalas wins the thropy.`);
+} else if (scoreKoalas === scoreDolphins) {
+  console.log(`Both wins the thropy.`);
+}
+
+// Coding Challenge Bonus 2
+console.log("Coding Challenge Bonus 2");
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log(`Dolphins wins the thropy.`);
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log(`Koalas wins the thropy.`);
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log(`Both wins the thropy.`);
+} else {
+  console.log(`No One wins the thropy.`);
 }
