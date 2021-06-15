@@ -5,15 +5,13 @@ Values and Variables
 assign their values according to your own country (population in millions)
 2. Log their values to the console
 */
-let country = 'Bangladesh';
-let continent = 'Asia';
+let country = "Bangladesh";
+let continent = "Asia";
 let population = 163;
 
 console.log(country);
 console.log(continent);
 console.log(population);
-
-
 
 /*
 Data Types
@@ -32,8 +30,6 @@ console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
 
-
-
 /*
 let, const and var
 ------------------
@@ -44,10 +40,8 @@ country. The variable should hold a Boolean value. Also declare a variable
 to the console
 */
 
-language = 'Bengali';
+language = "Bengali";
 population = 164;
-
-
 
 /*
 Basic Operator
@@ -63,15 +57,20 @@ have less people than the average country?
 which contains a string with this format: 'Portugal is in Europe, and its 11 million
 people speak portuguese'
 */
-population = 164/2;
+population = 164 / 2;
 population++;
 console.log(population);
 console.log(population > 6);
 console.log(population < 33);
-const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+const description =
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " million people speak " +
+  language;
 console.log(description);
-
-
 
 /*
 Strings and Template Literals
@@ -79,10 +78,8 @@ Strings and Template Literals
 1. Recreate the 'description' variable from the last assignment, this time
 using the template literal syntax
 */
-const description1 =   `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+const description1 = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description1);
-
-
 
 /*
 Taking Decisions: if / else Statements
@@ -95,12 +92,12 @@ minus the country's population)
 130. See the different results, and set the population back to original
 */
 if (population > 33) {
-    console.log(`${country}'s population is above average`);
-}else{
-    console.log(`${country}'s population is ${33-population} million below average`);
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(
+    `${country}'s population is ${33 - population} million below average`
+  );
 }
-
-
 
 /*
 Type Conversion and Coercion
@@ -113,8 +110,41 @@ Type Conversion and Coercion
 5 + 6 + '4' + 9 - 4 - 2;
 2. Execute the operations to check if you were right
 */
-console.log('9' - '5'); // 4
-console.log('19' - '13' + '17'); // 617
-console.log('19' - '13' + 17); // 23
-console.log('123' < 57); // false
-console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+console.log("9" - "5"); // 4
+console.log("19" - "13" + "17"); // 617
+console.log("19" - "13" + 17); // 23
+console.log("123" < 57); // false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143
+
+/*
+Equality Operators: == vs. ===
+------------------------------
+1. Declare a variable 'numNeighbours' based on a prompt input like this:
+prompt('How many neighbour countries does your country
+have?');
+2. If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality
+== for now)
+3. Use an else-if block to log 'More than 1 border' in case 'numNeighbours'
+is greater than 1
+4. Use an else block to log 'No borders' (this block will be executed when
+'numNeighbours' is 0 or any other value)
+5. Test the code with different values of 'numNeighbours', including 1 and 0.
+6. Change == to ===, and test the code again, with the same values of
+'numNeighbours'. Notice what happens when there is exactly 1 border! Why
+is this happening?
+7. Finally, convert 'numNeighbours' to a number, and watch what happens now
+when you input 1
+8. Reflect on why we should use the === operator and type conversion in this
+situation
+*/
+const numNeighbours = Number(
+  prompt("How many neighbour countries does your country have?")
+);
+
+if (numNeighbours === 1) {
+  console.log("Only 1 border");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
