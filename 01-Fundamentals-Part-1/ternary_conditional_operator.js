@@ -17,8 +17,8 @@ console.log(drink);
 // Variable repeatation.
 let drink2; // Declaration of drink2 variable
 if (age >= 18) {
-  drink2 = "Wine"; // Repeatation of drink2 variable with if else
+	drink2 = "Wine"; // Repeatation of drink2 variable with if else
 } else {
-  drink2 = "Water"; // Repeatation of drink2 variable with if else
+	drink2 = "Water"; // Repeatation of drink2 variable with if else
 }
 console.log(drink2);
