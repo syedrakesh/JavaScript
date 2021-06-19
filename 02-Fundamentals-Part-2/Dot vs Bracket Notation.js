@@ -19,14 +19,14 @@ const interestedIn = prompt('What do you want to know about Rakesh? Choose betwe
 console.log(rakesh.interestedIn); // Unsupported. Because Dot notation doesn't support expression.
 console.log(rakesh[interestedIn]); // Supported. Because Bracker notation support expression.
 
-if(rakesh[interestedIn]){
+if (rakesh[interestedIn]) {
     console.log(rakesh[interestedIn]);
-}else{
+} else {
     console.log('Wrong request! Choose between firstName, lastName, dob, age, friends');
 }
 
 rakesh.location = 'Bangladesh';
-rakesh['twitter']= '@syedrakesh_me';
+rakesh['twitter'] = '@syedrakesh_me';
 
 console.log(rakesh);
 
