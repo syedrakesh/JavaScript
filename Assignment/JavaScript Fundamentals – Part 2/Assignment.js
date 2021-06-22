@@ -262,8 +262,8 @@ const listOfNeighbours = [
     ['Spain'],
     ['Norway', 'Sweden', 'Russia']
 ];
-for(let i=0; i<listOfNeighbours.length; i++){
-    for(let y=0; y<listOfNeighbours[i].length; y++){
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    for (let y = 0; y < listOfNeighbours[i].length; y++) {
         console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
     }
 }
@@ -280,7 +280,7 @@ loop?
 */
 const percentages3 = [];
 let i = 0;
-while(i < populations.length){
+while (i < populations.length) {
     percentages3[i] = percentageOfWorld1(populations[i]);
     i++;
 }
