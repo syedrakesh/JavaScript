@@ -19,23 +19,29 @@ tall.
 GOOD LUCK �
 */
 const mark = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
 
-    calcBMI: function () {
-        return this.bmi = this.mass / (this.height ** 2);
-    }
+  calcBMI: function () {
+    return (this.bmi = this.mass / this.height ** 2);
+  },
 };
 const john = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
 
-    calcBMI: function () {
-        return this.bmi = this.mass / (this.height ** 2);
-    }
+  calcBMI: function () {
+    return (this.bmi = this.mass / this.height ** 2);
+  },
 };
 mark.calcBMI();
 john.calcBMI();
-console.log(`${mark.bmi > john.bmi ? 'Mark' : 'John'}'s BMI (${mark.bmi > john.bmi ? mark.bmi : john.bmi}) is higher than ${mark.bmi < john.bmi ? 'Mark' : 'John'}'s (${mark.bmi < john.bmi ? mark.bmi : john.bmi})!`);
+console.log(
+  `${mark.bmi > john.bmi ? 'Mark' : 'John'}'s BMI (${
+    mark.bmi > john.bmi ? mark.bmi : john.bmi
+  }) is higher than ${mark.bmi < john.bmi ? 'Mark' : 'John'}'s (${
+    mark.bmi < john.bmi ? mark.bmi : john.bmi
+  })!`
+);

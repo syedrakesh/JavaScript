@@ -36,7 +36,8 @@ let totals = [];
 
 console.log(bills);
 
-const calcTip = bills => bills >= 50 && bills <= 300 ? bills * (15 / 100) : bills * (20 / 100);
+const calcTip = (bills) =>
+    bills >= 50 && bills <= 300 ? bills * (15 / 100) : bills * (20 / 100);
 
 for (let i = 0; i < bills.length; i++) {
     tips.push(calcTip(bills[i]));
